@@ -1,2 +1,2 @@
-# projetos-etec
+# projetos
 Projetos Etec
