@@ -15,7 +15,7 @@ contagem_excelente = 0
 contagem_bom = 0
 contagem_ruim = 0
 
-for i in range(5):
+for i in range(50):
     nome_entrevistado = input("Digite o nome do entrevistado: ")
     try:
         idade_entrevistado = int(input("Digite a idade do entrevistado: "))
