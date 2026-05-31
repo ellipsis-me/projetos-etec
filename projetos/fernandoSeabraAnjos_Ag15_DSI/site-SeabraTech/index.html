@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- w3css -->
+    <title>SeabraTech</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Definimos que a sidebar terá uma largura de 120px e cor a cord de fundo #222
+        */
+        .w3-sidebar {
+            width: 200px;
+            background: #222;
+        }
+
+        /*Define Fonte para todas as tags listadas abaixo*/
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-sidebar a {
+            width: 100%;
+        }
+
+        #main {
+            margin-left: 200px;
+        }
+        .w3-row-padding img {margin-bottom: 12px;}
+        .hover-orange:hover {
+            background-color: #ff751f !important;
+            color: #38b6ff !important;
+        }
+        .titulo-secao {
+            color: #38b6ff;
+        }
+
+        .linha-secao {
+            width: 200px;
+        }
+
+        .logo-parceiro {
+            width: 50%;
+        }
+
+        /* Estilo para dispositivos pequenos */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- SideBar padrão em dispositivos grandes -->
+    <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
+        <!-- Navegação da sidebar -->
+        <!-- Página inicial -->
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black hover-orange w3-text-white">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <!-- Página de parceiros -->
+        <a href="#parceiros" class="w3-bar-item w3-button w3-padding-large w3-hover-black hover-orange w3-text-white">
+            <i class="fa fa-handshake-o w3-xxlarge"></i>
+            <p>PARCEIROS</p>
+        </a>
+        <!-- Página de FAQ -->
+        <a href="#faq" class="w3-bar-item w3-button w3-padding-large w3-hover-black hover-orange w3-text-white">
+            <i class="fa fa-question-circle w3-xxlarge"></i>
+            <p>FAQ</p>
+        </a>
+    </nav>
+    <!-- SideBar padrão em dispositivos grandes -->
+
+    <!-- NavBar pequena para dispositivos pequenos -->
+    <div class="w3-top w3-hide-large w3-hide-medium" >
+        <nav class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#home" class="w3-bar-item w3-button" style="width:25% ">HOME</a>
+            <a href="#parceiros" class="w3-bar-item w3-button" style="width:25% ">PARCEIROS</a>
+            <a href="#faq" class="w3-bar-item w3-button" style="width:27% ">FAQ</a>
+        </nav>
+    </div>
+    <!-- NavBar pequena para dispositivos pequenos -->
+
+    <!--Conteúdo da Página -->
+    <div class="w3-padding-large" id="main">
+        <!--Cabeçalho -->
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+                <h1 class="w3-center titulo-secao">SeabraTech</h1>
+                <img src="./imagens/logo.png" alt="Logo SeabraTech" class="w3-image" width="40%">
+        </header>
+        <!--Cabeçalho -->
+
+        <!--Home -->
+        <div class="w3-content w3-padding-64">
+            <h2 class="titulo-secao">Sobre a SeabraTech</h2>
+            <hr class="w3-opacity linha-secao">
+            <p>A SeabraTech é uma empresa de tecnologia especializada em soluções de infraestrutura para empresas de todos os tamanhos. Com uma equipe altamente qualificada e dedicada, oferecemos serviços de consultoria, implementação e suporte técnico para garantir que nossos clientes tenham uma infraestrutura robusta e eficiente.</p>
+            <ul class="w3-ul w3-hoverable w3-center w3-white">
+                <li class="w3-cyan w3-xlarge w3-padding-32">Nossos serviços são:</li>
+                <li class="w3-padding-16">Instalação de redes</li>
+                <li class="w3-padding-16">Migração de servidores para a nuvem</li>
+                <li class="w3-padding-16">Desenho de arquitetura</li>
+            </ul>
+            <h3 class="titulo-secao">Nossa História</h3>
+            <p>A SeabraTech foi fundada em 2010 com o objetivo de oferecer soluções de tecnologia de qualidade para empresas de todos os portes. Ao longo dos anos, crescemos e evoluímos, sempre buscando a excelência em nosso trabalho e a satisfação dos nossos clientes.</p>
+        </div>
+        <!--Home -->
+
+
+        <!-- PARCEIROS -->
+        <div class="w3-content w3-padding-64" id="parceiros">
+            <h2 class="titulo-secao">Nossos Parceiros</h2>
+            <hr class="w3-opacity linha-secao">
+            <p class="w3-xlarge w3-padding-32">Trabalhamos com uma rede de parceiros estratégicos para oferecer soluções completas aos nossos clientes, são eles:</p>
+            <div class="w3-row w3-row-padding">
+                <div class="w3-half">
+                    <img src="./imagens/parceiro_aws.png" alt="Parceiro AWS" class="logo-parceiro w3-opacity w3-hover-opacity-off">
+                    <img src="./imagens/parceiro_fortinet.png" alt="Parceiro Fortinet" class="logo-parceiro w3-opacity w3-hover-opacity-off">
+                    <img src="./imagens/parceiro_dell.png" alt="Parceiro Dell" class="logo-parceiro w3-opacity w3-hover-opacity-off">
+                </div>
+
+                <div class="w3-half">
+                    <img src="./imagens/parceiro_azure.png" alt="Parceiro Azure" class="logo-parceiro w3-opacity w3-hover-opacity-off">
+                    <img src="./imagens/parceiro_gcp.png" alt="Parceiro GCP" class="logo-parceiro w3-opacity w3-hover-opacity-off">
+                    <img src="./imagens/parceiro_mgc.png" alt="Parceiro MGC" class="logo-parceiro w3-opacity w3-hover-opacity-off">
+                </div>
+            </div>
+        </div>
+        <!-- PARCEIROS -->
+
+
+        <!-- FAQ -->
+        <div class="w3-content w3-padding-64" id="faq">
+            <h2 class="titulo-secao">Perguntas Frequentes</h2>
+            <hr class="w3-opacity linha-secao">
+            <p>Aqui estão algumas das perguntas mais comuns que recebemos de nossos clientes:</p>
+            <ul class="w3-ul w3-hoverable w3-white">
+                <li class="w3-cyan w3-xlarge w3-padding-32">Como posso solicitar um orçamento?</li>
+                <li class="w3-padding-16">Você pode entrar em contato conosco através do nosso formulário de contato ou ligar para o nosso número de atendimento ao cliente.</li>
+                <li class="w3-cyan w3-xlarge w3-padding-32">Quais são os prazos para a implementação dos serviços?</li>
+                <li class="w3-padding-16">Os prazos variam dependendo do serviço solicitado e da complexidade do projeto. Entraremos em contato com você para discutir os detalhes e fornecer um cronograma estimado.</li>
+                <li class="w3-cyan w3-xlarge w3-padding-32">Porque migrar para a nuvem?</li>
+                <li class="w3-padding-16">A migração para a nuvem oferece benefícios como escalabilidade, redução de custos e maior confiabilidade. Entraremos em contato com você para discutir os detalhes e fornecer um cronograma estimado.</li>
+            </ul>
+        </div>
+        <!-- FAQ -->
+
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <i class="fa w3-hover-text-green fa-envelope w3-xlarge"></i>
+        <a class="w3-hover-text-green" href="mailto:fernando.seabra@seabratech.com">fernando.seabra@seabratech.com</a>
+        <i class="fa w3-hover-text-green fa-phone w3-xlarge"></i>
+        <a class="w3-hover-text-green" href="tel:+551112345678">+55 11 1234-5678</a>
+        <i class="fa w3-hover-text-green fa-instagram w3-xlarge"></i>
+        <a class="w3-hover-text-green" href="https://www.instagram.com/seabratech" target="_blank">/@seabratech</a>
+        <i class="fa w3-hover-text-green fa-linkedin-square w3-xlarge"></i>
+        <a class="w3-hover-text-green" href="https://www.linkedin.com/company/seabratech" target="_blank">/seabratech</a>
+    </footer>
+    <!-- RODAPÉ -->
+</body>
+
+</html>
