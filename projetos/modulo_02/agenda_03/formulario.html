@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário de Compra</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <form method="post" class="w3-container w3-center w3-display-middle" action="calculo_desconto.php">
+        <label class="w3-padding" for="txtNome">Nome do cliente</label>
+            <input name="txtNome" type="text" id="txtNome" class="w3-padding" placeholder="Digitar Nome do Cliente"><br>
+        <label class="w3-padding" for="txtValorCompra">Valor da compra</label>
+            <input name="txtValorCompra" type="number" id="txtValorCompra" class="w3-padding" placeholder="Digitar valor da Compra"><br>
+
+        <label class="w3-padding" for="cmbPag">Forma de pagamento</label>
+            <select class="w3-padding" name="cmbPag" id="cmbPag">
+                <option value="cartaoCredito">Cartão de Crédito</option>
+                <option value="boleto">Boleto</option>
+                <option value="deposito" selected>Depósito</option>
+            </select><br>
+
+        <button class="w3-circle w3-black w3-padding">Comprar</button>
+    </form>
+</body>
+
+</html>
